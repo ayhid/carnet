@@ -1,0 +1,8 @@
+<template name="outgoingsList">
+    <a href="{{pathFor 'newOutgoing'}}">create outgoing</a>
+    <ul>
+        {{#each outgoingsList}}
+            {{>outgoingItem}}
+        {{/each}}
+    </ul>
+</template>

@@ -1,0 +1,11 @@
+<template name="outgoingItem">
+    <li>
+        {{name}}, participants: {{participantsCount}}, subscribers: {{membersCount}} totalamount: {{totalAmount}}, une
+        part={{regularShare}}
+        <ul>
+            {{#each refunds}}
+                {{>refundItem}}
+            {{/each}}
+        </ul>
+    </li>
+</template>
