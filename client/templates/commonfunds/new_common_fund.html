@@ -1,0 +1,9 @@
+<template name="newCommonFund">
+<h1>Add a new Common Fund</h1>
+    {{#autoForm collection="CommonFundCollection" id="insertCommonFund" type="insert"}}
+            {{> afQuickField name='name' }}
+            {{> afQuickField name='members' options=members}}
+            {{> afQuickField name='participations'}}
+         <button type="submit" class="btn btn-primary">Insert</button>
+    {{/autoForm}}
+</template>

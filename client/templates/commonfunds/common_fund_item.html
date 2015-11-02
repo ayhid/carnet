@@ -1,0 +1,12 @@
+<template name="commonFundItem">
+    <li>
+        <a href ="{{pathFor 'commonFundPage'}}">{{_id}}{{name}}, participants: {{participantsCount}}, subscribers: {{membersCount}} totalamount: {{totalAmount}}, une
+        part={{regularShare}}
+            </a>
+        <ul>
+            {{#each refunds}}
+                {{>refundItem}}
+            {{/each}}
+        </ul>
+    </li>
+</template>

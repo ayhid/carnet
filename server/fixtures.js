@@ -43,9 +43,8 @@ if(Meteor.users.find().count() ===0){
 
 
 
-
-if (Outgoings.find().count() === 0) {
-    Outgoings.insert({
+if (CommonFundCollection.find().count() === 0) {
+    CommonFundCollection.insert({
         name: "trip cool",
         members:[
             ayoubId,
@@ -70,7 +69,7 @@ if (Outgoings.find().count() === 0) {
         ]
     });
 
-    Outgoings.insert({
+    CommonFundCollection.insert({
         name: "electricité",
         members:[
             ayoubId,

@@ -1,0 +1,8 @@
+<template name="commonFundsList">
+    <a href="{{pathFor 'newCommonFund'}}">create outgoing</a>
+    <ul>
+        {{#each commonFundsList}}
+            {{>commonFundItem}}
+        {{/each}}
+    </ul>
+</template>
